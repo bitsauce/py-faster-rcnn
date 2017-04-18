@@ -25,3 +25,7 @@ libs/
     |-- myimdb.py (My image database class. Handles image and annotation file processing)```
 
 All the nessesary python files were also updated to Python 3. Some other changes to the python code were required, [see here](https://github.com/deboc/py-faster-rcnn/tree/master/help).
+
+To train I used the following commands:
+```cd $FRCN_ROOT
+./tools/train_faster_rcnn_alt_opt.py --gpu 0 --net_name mynet --weights data/imagenet_models/VGG_CNN_M_1024.v2.caffemodel --imdb myimdb_train --cfg models/mynet/config.yml```
