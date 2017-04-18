@@ -7,7 +7,8 @@ This repository contains code to train a R-CNN network using the [udacity datase
 2. Put the image files of the dataset into data/MyData/data/Images
 3. Generate the annotation files using [data/MyData/preprocess_data.py](https://github.com/bitsauce/py-faster-rcnn/tree/master/data/MyData/preprocess_data.py)
 
-This is the file structure [myimdb.py](https://github.com/bitsauce/py-faster-rcnn/tree/master/lib/datasets/myimdb.py) expects
+This is the file structure [myimdb.py](https://github.com/bitsauce/py-faster-rcnn/tree/master/lib/datasets/myimdb.py) expects:
+```
 data/
 |-- MyData/
     |-- labels.csv (Labels from the dataset)
@@ -24,5 +25,6 @@ models/
 libs/
 |-- datasets/
     |-- myimdb.py (My image database class. Handles image and annotation file processing)
+```
 
 All the nessesary python files were also updated to Python 3. Some other changes to the python code were required, [see here](https://github.com/deboc/py-faster-rcnn/tree/master/help).
